@@ -1,0 +1,63 @@
+{
+    "bioKingdom": [
+        "Plantae",
+        "Fungi",
+        "Animalia"
+    ],
+    "tags": {
+        "Plantae":[
+            "tree", 
+            "shrub", 
+            "flower", 
+            "fern", 
+            "moss", 
+            "grass", 
+            "orchid", 
+            "perennial", 
+            "annual", 
+            "deciduous", 
+            "evergreen", 
+            "medicinal", 
+            "flowering", 
+            "non-flowering"
+        ],
+        "Fungi": [
+            "mushroom", 
+            "polypore", 
+            "mycorrhizal", 
+            "saprotrophic", 
+            "edible", 
+            "toxic", 
+            "medicinal", 
+            "spore-bearing", 
+            "decomposer", 
+            "mycelium", 
+            "endangered"
+        ],
+        "Animalia": [
+            "mammal", 
+            "bird", 
+            "reptile", 
+            "amphibian", 
+            "fish", 
+            "invertebrate", 
+            "carnivore", 
+            "herbivore", 
+            "omnivore", 
+            "marine", 
+            "freshwater", 
+            "terrestrial", 
+            "nocturnal", 
+            "diurnal"
+        ]
+    },
+    "conservationStatus": [
+        "extinct (EX)",
+        "extinct in the wild (EW)",
+        "critically endangered (CR)",
+        "endangered (EN)",
+        "vulnerable (VU)",
+        "near threatened (NT)",
+        "least concern (LC)"
+    ]
+}

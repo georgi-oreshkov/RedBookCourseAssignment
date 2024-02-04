@@ -1,0 +1,20 @@
+{
+  "_id": "ID",
+  "names": {
+    "common": "common_name",
+    "scientific": "scintific_name"
+  },
+  "bioKingdom": "biological kingdom",
+  "tags": ["mammal", "fungi", "perenial", "etc..."],
+  "description": "A short description",
+  "conservationStatus": "status",
+  "habitat": "habitat info",
+  "diet": "for animals.",
+  "medicinalUses": "info about uses in medicine",
+  "threats": ["Habitat loss", "Poaching", "Human-wildlife conflict", "etc."],
+  "populationRecords": [],
+  "media": {
+    "images": ["url1", "url2"],
+    "videos": ["url3", "url4"]
+  }
+}
