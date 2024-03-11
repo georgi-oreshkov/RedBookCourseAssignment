@@ -1,0 +1,45 @@
+.bg-site-landing{
+    background-image: url("/static/Images/bg.jpg");
+    background-size:auto;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.bg-site-primary {
+    background-image: url("/static/Images/bg.jpg");
+    background-size:cover;
+    background-position: center center;
+    backdrop-filter: blur(5px);
+    background-attachment: fixed;
+}
+
+.favourite-button {
+    width: 10%;
+}
+
+.favourite-icon  {
+    width: 13%;
+}
+
+body.main-body {
+    background: #DCDCDD;
+}
+
+.bg-dark-transp-30 {
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity (0.7) for desired transparency */
+    backdrop-filter: blur(5px); /* Adjust the blur value (5px) for desired effect */
+}
+
+.bg-dark-transp-50 {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.7) for desired transparency */
+    backdrop-filter: blur(5px); /* Adjust the blur value (5px) for desired effect */
+}
+
+.bg-nocolor{
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.text-white {
+    color: whitesmoke;
+}
+  
