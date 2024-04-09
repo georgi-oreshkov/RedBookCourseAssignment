@@ -7,26 +7,26 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item rounded mx-2 px-1">
-                    <a class="nav-link fs-5" href="{% url 'main' %}">Book</a>
+                    <a class="nav-link fs-5" href="{% url 'main' %}">Книга</a>
                 </li>
-                {% if isUserAdmin %}
+                {% if is_user_admin %}
                     <li class="nav-item rounded mx-2 px-1">
-                        <a class="nav-link fs-5" href="{% url 'admin' %}">Admin Panel</a>
+                        <a class="nav-link fs-5" href="{% url 'admin' %}">Панел на администратора</a>
                     </li>
                 {% endif %}
                 <li class="nav-item rounded mx-2 px-1">
-                    <a class="nav-link fs-5" href="{% url 'logout' %}">Logout</a>
+                    <a class="nav-link fs-5" href="{% url 'logout' %}">Изход</a>
                 </li>
             </ul>
         </div>
 
         {% if request.path == '/main/' %}
         <form class="d-flex mx-3" method="GET">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
-            <button class="btn btn-outline-light" type="submit" name="search">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Търсене" aria-label="Търсене" name="query">
+            <button class="btn btn-outline-light" type="submit" name="search">Търсене</button>
         </form>
         {% endif %}
     </div>
 
-    <a class="navbar-brand fs-3 d-flex ms-auto" href="{% url 'index' %}">The Red Book</a>
+    <a class="navbar-brand fs-3 d-flex ms-auto" href="{% url 'landing' %}">Червената книга</a>
 </nav>

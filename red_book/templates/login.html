@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {%load static%}
-<html lang="en" class="h-100">
+<html lang="bg" class="h-100">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,7 +12,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <title>Login</title>
+    <title>Вход</title>
   </head>
   <body class="h-100 bg-site-primary">
     <div class="container h-100">
@@ -20,7 +20,7 @@
         <div class="col-md-6 mb-5">
           <div class="card">
             <div class="card-header">
-              <h4>Login</h4>
+              <h4>Вход</h4>
             </div>
             <div class="card-body">
               <form method="POST" action="{% url 'login' %}">
@@ -35,30 +35,30 @@
                 </div>
                 {% endif %}
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email address</label>
+                  <label for="email" class="form-label">Електронна поща</label>
                   <input
-                    type="email"
+                    type="text"
                     class="form-control"
                     id="email"
-                    name="email"
-                    placeholder="Enter your email"
+                    name="user_or_email"
+                    placeholder="Въведете вашия имейл или потребителско име"
                     required
                   />
                 </div>
                 <div class="mb-3">
-                  <label for="password" class="form-label">Password</label>
+                  <label for="password" class="form-label">Парола</label>
                   <input
                     type="password"
                     class="form-control"
                     id="password"
                     name="password"
-                    placeholder="Enter your password"
+                    placeholder="Въведете вашата парола"
                     required
                   />
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-primary">Вход</button>
                 <a class="btn-link float-end" href="{% url 'register' %}"
-                  >Register?</a
+                  >Регистрация?</a
                 >
               </form>
             </div>
