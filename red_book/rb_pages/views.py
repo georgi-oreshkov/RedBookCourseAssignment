@@ -8,12 +8,14 @@ from django.contrib.auth.decorators import login_required
 
 from rb_pages.models import Favorite, Species
 
+
 def is_email(s):
-            try:
-                validate_email(s)
-                return True
-            except ValidationError:
-                return False
+    try:
+        validate_email(s)
+        return True
+    except ValidationError:
+        return False
+
 
 def login_view(request):
     if request.method == "POST":
@@ -25,7 +27,7 @@ def login_view(request):
             user = authenticate(request, username=username, password=password)
         else:
             user = authenticate(request, username=user_or_email, password=password)
-        
+
         if user is not None:
             # Authentication succeeded, log in the user
             login(request, user)
@@ -35,6 +37,7 @@ def login_view(request):
             messages.error(request, "Invalid email or password.")
 
     return render(request, "login.html")
+
 
 @login_required
 def logout_view(request):
@@ -98,10 +101,12 @@ def main_view(request):
         search_query = request.GET.get("query").lower()
         species_data = Species.objects.filter(name__icontains=search_query)
 
+    user_favorites = Species.objects.filter(favorite__user=user).distinct()
+    
     return render(
         request,
         "main.html",
-        {"species_data": species_data, "is_user_admin": is_user_admin},
+        {"species_data": species_data, "is_user_admin": is_user_admin, "user_favorites": user_favorites},
     )
 
 

@@ -14,11 +14,11 @@
 }
 
 .favourite-button {
-    width: 10%;
+    width: 5%;
 }
 
 .favourite-icon  {
-    width: 13%;
+    width: 6%;
 }
 
 body.main-body {
@@ -41,5 +41,10 @@ body.main-body {
 
 .text-white {
     color: whitesmoke;
+}
+
+.sp-img {
+    height: 300px;
+    width: auto;
 }
   
