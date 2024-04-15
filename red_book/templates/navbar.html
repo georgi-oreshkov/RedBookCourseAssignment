@@ -25,6 +25,18 @@
             <input class="form-control me-2" type="search" placeholder="Търсене" aria-label="Търсене" name="query">
             <button class="btn btn-outline-light" type="submit" name="search">Търсене</button>
         </form>
+        <div class="dropdown d-flex mx-3">
+            <button class="btn btn-outline-light dropdown-toggle" type="button" id="typeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                Филтър по тип
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="typeDropdown">
+                <!-- Populate dropdown options dynamically -->
+                <li><a class="dropdown-item" href="#" data-type="">Всички типове</a></li>
+                {% for type in sp_types %}
+                <li><a class="dropdown-item" href="#" data-type="{{ type }}">{{ type }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
         {% endif %}
     </div>
 

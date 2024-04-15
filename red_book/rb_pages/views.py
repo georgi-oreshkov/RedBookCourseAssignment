@@ -102,11 +102,12 @@ def main_view(request):
         species_data = Species.objects.filter(name__icontains=search_query)
 
     user_favorites = Species.objects.filter(favorite__user=user).distinct()
+    species_types = Species.objects.values_list('sp_type', flat=True).distinct()
     
     return render(
         request,
         "main.html",
-        {"species_data": species_data, "is_user_admin": is_user_admin, "user_favorites": user_favorites},
+        {"species_data": species_data, "is_user_admin": is_user_admin, "user_favorites": user_favorites, "sp_types": species_types},
     )
 
 
